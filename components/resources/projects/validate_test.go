@@ -3,7 +3,7 @@ package projects_test
 import (
 	"testing"
 
-	"github.com/opf/openproject-cli/components/resources/projects"
+	"github.com/sabudaye/openproject-cli/components/resources/projects"
 )
 
 func TestValidateIdentifier(t *testing.T) {

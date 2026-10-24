@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/cmd/timeentry"
+	"github.com/sabudaye/openproject-cli/cmd/timeentry"
 )
 
 func TestRootCmd_UsesHyphenatedName(t *testing.T) {

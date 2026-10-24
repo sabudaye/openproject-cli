@@ -3,7 +3,7 @@ package git
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/opf/openproject-cli/cmd/git/start"
+	"github.com/sabudaye/openproject-cli/cmd/git/start"
 )
 
 var RootCmd = &cobra.Command{

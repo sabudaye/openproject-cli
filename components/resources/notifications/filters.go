@@ -1,6 +1,6 @@
 package notifications
 
-import "github.com/opf/openproject-cli/components/requests"
+import "github.com/sabudaye/openproject-cli/components/requests"
 
 func ReasonFilter(reason string) requests.Filter {
 	return requests.Filter{

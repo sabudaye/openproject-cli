@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/dtos"
 )
 
 // upload assumes validateAttachment already confirmed the work package

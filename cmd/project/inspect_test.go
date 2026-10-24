@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/components/routes"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/routes"
 )
 
 func TestInspectBrowserFailureReturnsError(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func Parse[T any](body []byte) (element T) {

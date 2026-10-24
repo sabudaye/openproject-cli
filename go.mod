@@ -1,4 +1,4 @@
-module github.com/opf/openproject-cli
+module github.com/sabudaye/openproject-cli
 
 go 1.25.1
 

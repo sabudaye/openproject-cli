@@ -1,6 +1,6 @@
 package resources
 
-import "github.com/opf/openproject-cli/components/requests"
+import "github.com/sabudaye/openproject-cli/components/requests"
 
 func TypeAheadFilter(input string) requests.Filter {
 	return requests.Filter{

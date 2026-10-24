@@ -5,7 +5,7 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func Browser(url *url.URL) error {

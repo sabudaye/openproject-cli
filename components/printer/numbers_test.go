@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func TestNumber(t *testing.T) {

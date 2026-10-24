@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 type ActivityDto struct {

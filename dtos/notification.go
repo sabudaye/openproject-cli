@@ -1,8 +1,8 @@
 package dtos
 
 import (
-	"github.com/opf/openproject-cli/components/parser"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/parser"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 type NotificationDto struct {

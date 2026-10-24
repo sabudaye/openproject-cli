@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/common"
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/parser"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/dtos"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/common"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/parser"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func resolveAction(workPackage *dtos.WorkPackageDto, action string) (*dtos.CustomActionDto, error) {

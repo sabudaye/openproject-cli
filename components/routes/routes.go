@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 var host *url.URL

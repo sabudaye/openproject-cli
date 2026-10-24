@@ -5,10 +5,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/opf/openproject-cli/components/common"
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/resources/users"
+	"github.com/sabudaye/openproject-cli/components/common"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/resources/users"
 )
 
 var keywords = []string{"me"}

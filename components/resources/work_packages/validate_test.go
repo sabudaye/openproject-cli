@@ -3,7 +3,7 @@ package work_packages_test
 import (
 	"testing"
 
-	"github.com/opf/openproject-cli/components/resources/work_packages"
+	"github.com/sabudaye/openproject-cli/components/resources/work_packages"
 )
 
 func TestValidateIdentifier(t *testing.T) {

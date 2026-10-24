@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 func TestSearchUsersRendersEmptyJSONArray(t *testing.T) {

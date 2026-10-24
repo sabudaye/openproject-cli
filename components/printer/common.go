@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opf/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/errors"
 )
 
 type apiErrorModel struct {

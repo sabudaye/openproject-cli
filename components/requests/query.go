@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/common"
+	"github.com/sabudaye/openproject-cli/components/common"
 )
 
 type Query struct {

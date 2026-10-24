@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func TestInitRenderer_UnknownFormat_PrintsError(t *testing.T) {

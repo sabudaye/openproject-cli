@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func TestInvalidOutputFormatStopsCommand(t *testing.T) {

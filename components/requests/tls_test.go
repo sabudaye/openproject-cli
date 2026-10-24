@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 // httptest.NewTLSServer issues a self-signed certificate that is not

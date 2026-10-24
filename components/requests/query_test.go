@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/components/resources/notifications"
-	"github.com/opf/openproject-cli/components/resources/work_packages"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/resources/notifications"
+	"github.com/sabudaye/openproject-cli/components/resources/work_packages"
 )
 
 func TestFilterQuery_String_WithFilters(t *testing.T) {

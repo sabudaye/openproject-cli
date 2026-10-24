@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/dtos"
 )
 
 // A freshly created work package has lockVersion 0. The PATCH body must

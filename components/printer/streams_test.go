@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 // Diagnostics must go to standard error so that machine-readable output

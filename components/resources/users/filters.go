@@ -3,7 +3,7 @@ package users
 import (
 	"strconv"
 
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 func IdFilter(ids []uint64) requests.Filter {

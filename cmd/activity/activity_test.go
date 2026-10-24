@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/cmd/activity"
+	"github.com/sabudaye/openproject-cli/cmd/activity"
 )
 
 func TestRootCmd_UsesSingularNoun(t *testing.T) {

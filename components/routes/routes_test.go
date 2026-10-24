@@ -4,8 +4,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/routes"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/routes"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func initHost(t *testing.T) {

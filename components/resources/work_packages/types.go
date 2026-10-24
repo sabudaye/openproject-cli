@@ -3,10 +3,10 @@ package work_packages
 import (
 	"strings"
 
-	"github.com/opf/openproject-cli/components/common"
-	"github.com/opf/openproject-cli/components/parser"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/components/common"
+	"github.com/sabudaye/openproject-cli/components/parser"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/dtos"
 )
 
 func availableTypes(projectLink *dtos.LinkDto) (dtos.TypeDtos, error) {

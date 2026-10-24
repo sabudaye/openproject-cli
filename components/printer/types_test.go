@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func TestTypes(t *testing.T) {

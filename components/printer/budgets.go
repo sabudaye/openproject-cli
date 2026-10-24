@@ -1,6 +1,6 @@
 package printer
 
-import "github.com/opf/openproject-cli/models"
+import "github.com/sabudaye/openproject-cli/models"
 
 func Budget(budget *models.Budget) {
 	activeRenderer.Budget(budget)

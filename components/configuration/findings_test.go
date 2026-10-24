@@ -8,7 +8,7 @@ package configuration_test
 import (
 	"testing"
 
-	"github.com/opf/openproject-cli/components/configuration"
+	"github.com/sabudaye/openproject-cli/components/configuration"
 )
 
 // Finding #1: a corrupt config file must now be reported as an error rather than

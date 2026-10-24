@@ -1,6 +1,6 @@
 package dtos
 
-import "github.com/opf/openproject-cli/models"
+import "github.com/sabudaye/openproject-cli/models"
 
 type UserDto struct {
 	Id        uint64 `json:"id,omitempty"`

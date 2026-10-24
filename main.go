@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/opf/openproject-cli/cmd"
-	"github.com/opf/openproject-cli/components/configuration"
-	openerrors "github.com/opf/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/cmd"
+	"github.com/sabudaye/openproject-cli/components/configuration"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
 )
 
 var (

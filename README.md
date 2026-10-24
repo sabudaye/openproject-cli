@@ -1,6 +1,6 @@
 # OpenProject CLI
 
-[![CI](https://github.com/opf/openproject-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/opf/openproject-cli/actions/workflows/ci.yml)
+[![CI](https://github.com/sabudaye/openproject-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/sabudaye/openproject-cli/actions/workflows/ci.yml)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/opf/openproject-cli)
 
 > [!WARNING]
@@ -10,7 +10,7 @@
 > - **Maturity:** v0.6 was developed at a rapid pace — including with the assistance of AI coding tools — primarily for internal use. It is used daily by a number of developers on our team and works well for us, but it has not yet had the level of scrutiny required to consider it secure or stable enough for general usage. Use it with care and at your own risk.
 > - **Support:** As with all versions of this tool, this is unsupported software with no official technical support from OpenProject GmbH.
 >
-> If you value stability over new features, we recommend staying on [v0.5.5](https://github.com/opf/openproject-cli/releases/tag/v0.5.5) for now. It is equally unsupported, but has a smaller surface area and a longer track record.
+> If you value stability over new features, we recommend staying on [v0.5.5](https://github.com/sabudaye/openproject-cli/releases/tag/v0.5.5) for now. It is equally unsupported, but has a smaller surface area and a longer track record.
 
 OpenProject CLI is a tool for operating your OpenProject instances from the command line. Therefore, it provides a
 subset of use cases for OpenProject.
@@ -27,14 +27,14 @@ There are many ways to install the OpenProject CLI:
 
 Executables are provided for Linux, macOS and Windows (currently Linux x64 only).
 
-You can find the executables in the [**Releases**](https://github.com/opf/openproject-cli/releases/) section of this
+You can find the executables in the [**Releases**](https://github.com/sabudaye/openproject-cli/releases/) section of this
 repository. The latest release is available under
-[https://github.com/opf/openproject-cli/releases/latest](https://github.com/opf/openproject-cli/releases/latest).
+[https://github.com/sabudaye/openproject-cli/releases/latest](https://github.com/sabudaye/openproject-cli/releases/latest).
 
 Download the zip archive for your operating system and desired version of the OpenProject CLI:
 
 ```shell
-curl -O https://github.com/opf/openproject-cli/releases/download/0.2.0/openproject-cli_linux_x64_X.Y.Z.zip
+curl -O https://github.com/sabudaye/openproject-cli/releases/download/0.2.0/openproject-cli_linux_x64_X.Y.Z.zip
 ```
 
 Extract the executable from the zip archive and move the executable to a location that is within your `PATH`:
@@ -67,7 +67,7 @@ If you already have the Go toolchain installed on your system, you can install t
 command:
 
 ```shell
-go install github.com/opf/openproject-cli@latest
+go install github.com/sabudaye/openproject-cli@latest
 ```
 
 This will install the most current commit development version for now. Keep in mind that the resulting command is also
@@ -358,9 +358,9 @@ git tag vX.Y.Z
 git push origin vX.Y.Z
 ```
 
-This triggers the [Release workflow](https://github.com/opf/openproject-cli/actions/workflows/release.yml), which builds binaries for all platforms and publishes a GitHub release with zip archives attached.
+This triggers the [Release workflow](https://github.com/sabudaye/openproject-cli/actions/workflows/release.yml), which builds binaries for all platforms and publishes a GitHub release with zip archives attached.
 
-Once the workflow completes, go to the [GitHub releases page](https://github.com/opf/openproject-cli/releases) and manually edit the release to add the release notes.
+Once the workflow completes, go to the [GitHub releases page](https://github.com/sabudaye/openproject-cli/releases) and manually edit the release to add the release notes.
 
 ## Used open source tools and libraries
 

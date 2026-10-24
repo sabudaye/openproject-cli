@@ -12,10 +12,10 @@ import (
 	"strings"
 	"testing"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/components/resources/work_packages"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/resources/work_packages"
 )
 
 func TestUpdateValidatesTypeBeforeExecutingAction(t *testing.T) {
