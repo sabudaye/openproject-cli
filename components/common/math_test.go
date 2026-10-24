@@ -3,7 +3,7 @@ package common_test
 import (
 	"testing"
 
-	"github.com/opf/openproject-cli/components/common"
+	"github.com/sabudaye/openproject-cli/components/common"
 )
 
 func TestMax(t *testing.T) {

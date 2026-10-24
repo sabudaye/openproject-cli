@@ -1,11 +1,11 @@
 package projects
 
 import (
-	"github.com/opf/openproject-cli/components/parser"
-	"github.com/opf/openproject-cli/components/paths"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/dtos"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/parser"
+	"github.com/sabudaye/openproject-cli/components/paths"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func All() ([]*models.Project, error) {

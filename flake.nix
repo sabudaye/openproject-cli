@@ -47,7 +47,7 @@
             vendorHash = "sha256-JFvC9V0xS8SZSdLsOtpyTrFzXjYAOaPQaJHdcnJzK3s="; 
             meta = with pkgs.lib; {
               description = "Simple command-line interface to OpenProject";
-              homepage = "https://github.com/opf/openproject-cli";
+              homepage = "https://github.com/sabudaye/openproject-cli";
               licenses = licenses.gpl3;
             };
           };

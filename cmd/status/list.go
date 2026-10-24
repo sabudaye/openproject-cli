@@ -3,9 +3,9 @@ package status
 import (
 	"github.com/spf13/cobra"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	wpstatus "github.com/opf/openproject-cli/components/resources/status"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	wpstatus "github.com/sabudaye/openproject-cli/components/resources/status"
 )
 
 var listCmd = &cobra.Command{

@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/configuration"
+	"github.com/sabudaye/openproject-cli/components/configuration"
 )
 
 func TestWriteConfigForProfile_FileModeIs0600(t *testing.T) {

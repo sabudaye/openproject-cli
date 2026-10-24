@@ -3,7 +3,7 @@ package dtos
 import (
 	"time"
 
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/models"
 	"github.com/sosodev/duration"
 )
 

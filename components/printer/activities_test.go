@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 // TestActivities_UserLookup_FirstUser reproduces the sort.Search bug:

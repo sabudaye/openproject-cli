@@ -3,7 +3,7 @@ package filters
 import (
 	"time"
 
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 type TimestampFilter struct {

@@ -7,9 +7,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/resources/work_packages"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/resources/work_packages"
 )
 
 func newCmdWithDescriptionFlag(flag *string) *cobra.Command {

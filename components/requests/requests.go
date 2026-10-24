@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 var client *http.Client

@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/configuration"
+	"github.com/sabudaye/openproject-cli/components/configuration"
 )
 
 // readRawConfig returns the raw bytes of the config file the package writes to.

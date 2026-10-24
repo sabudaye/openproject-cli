@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 type SubProjectFilter struct {

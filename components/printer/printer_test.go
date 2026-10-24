@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/routes"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/routes"
 )
 
 var testingPrinter = &printer.TestingPrinter{}

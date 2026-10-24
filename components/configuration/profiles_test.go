@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/configuration"
+	"github.com/sabudaye/openproject-cli/components/configuration"
 )
 
 // setupTempConfig points XDG_CONFIG_HOME at a temp dir and unsets credential

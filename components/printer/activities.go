@@ -5,7 +5,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func Activities(activities []*models.Activity, users []*models.User) {

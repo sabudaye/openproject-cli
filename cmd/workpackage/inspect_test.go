@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
 )
 
 func TestInspectBrowserFailureReturnsError(t *testing.T) {

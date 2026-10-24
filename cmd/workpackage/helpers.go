@@ -1,6 +1,6 @@
 package workpackage
 
-import opErrors "github.com/opf/openproject-cli/components/errors"
+import opErrors "github.com/sabudaye/openproject-cli/components/errors"
 
 func isNotFound(err error) bool {
 	if respErr, ok := err.(*opErrors.ResponseError); ok {

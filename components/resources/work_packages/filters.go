@@ -3,7 +3,7 @@ package work_packages
 import (
 	"strings"
 
-	"github.com/opf/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/requests"
 )
 
 type FilterOption int

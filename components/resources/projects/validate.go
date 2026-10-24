@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/opf/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/errors"
 )
 
 // Dashes are allowed for old project identifiers; semantic identifiers only allow letters, numbers and underscores.

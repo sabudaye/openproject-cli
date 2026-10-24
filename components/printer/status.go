@@ -1,6 +1,6 @@
 package printer
 
-import "github.com/opf/openproject-cli/models"
+import "github.com/sabudaye/openproject-cli/models"
 
 func Status(s *models.Status) {
 	activeRenderer.Status(s)

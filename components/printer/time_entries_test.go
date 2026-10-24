@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func TestTimeEntry_Default(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/configuration"
-	"github.com/opf/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/configuration"
+	"github.com/sabudaye/openproject-cli/components/printer"
 )
 
 func configPath() string {

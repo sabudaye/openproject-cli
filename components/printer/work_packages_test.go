@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/routes"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/routes"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 func TestWorkPackage(t *testing.T) {

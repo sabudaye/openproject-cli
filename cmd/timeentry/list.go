@@ -3,12 +3,12 @@ package timeentry
 import (
 	"github.com/spf13/cobra"
 
-	openerrors "github.com/opf/openproject-cli/components/errors"
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/components/resources"
-	"github.com/opf/openproject-cli/components/resources/time_entries"
-	"github.com/opf/openproject-cli/components/resources/time_entries/filters"
+	openerrors "github.com/sabudaye/openproject-cli/components/errors"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/resources"
+	"github.com/sabudaye/openproject-cli/components/resources/time_entries"
+	"github.com/sabudaye/openproject-cli/components/resources/time_entries/filters"
 )
 
 var activeTimeEntryFilters = map[string]resources.Filter{

@@ -1,6 +1,6 @@
 package printer
 
-import "github.com/opf/openproject-cli/models"
+import "github.com/sabudaye/openproject-cli/models"
 
 // WhoamiEntry is one resolved identity (profile, server, user) for display.
 type WhoamiEntry struct {

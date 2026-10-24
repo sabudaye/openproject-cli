@@ -6,9 +6,9 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/opf/openproject-cli/components/printer"
-	"github.com/opf/openproject-cli/components/requests"
-	"github.com/opf/openproject-cli/components/routes"
+	"github.com/sabudaye/openproject-cli/components/printer"
+	"github.com/sabudaye/openproject-cli/components/requests"
+	"github.com/sabudaye/openproject-cli/components/routes"
 )
 
 func initWorkPackageTestServer(t *testing.T, handler http.HandlerFunc) (*printer.TestingPrinter, *int) {

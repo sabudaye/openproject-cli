@@ -3,7 +3,7 @@ package work_packages
 import (
 	"testing"
 
-	"github.com/opf/openproject-cli/dtos"
+	"github.com/sabudaye/openproject-cli/dtos"
 )
 
 // A work package whose payload has no _links object must not panic the

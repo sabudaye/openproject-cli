@@ -7,8 +7,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/opf/openproject-cli/components/common"
-	"github.com/opf/openproject-cli/models"
+	"github.com/sabudaye/openproject-cli/components/common"
+	"github.com/sabudaye/openproject-cli/models"
 )
 
 type TextRenderer struct{}
