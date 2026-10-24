@@ -1,6 +1,7 @@
 package requests
 
 import (
+	"crypto/tls"
 	"fmt"
 	"io"
 	"net/http"
@@ -22,10 +23,18 @@ type RequestData struct {
 }
 
 func Init(hostUrl *url.URL, tokenValue string, verboseFlag bool) {
-	client = &http.Client{}
+	base := http.DefaultTransport.(*http.Transport)
+	transport := base.Clone()
+	if transport.TLSClientConfig == nil {
+		transport.TLSClientConfig = &tls.Config{}
+	}
+	transport.TLSClientConfig.InsecureSkipVerify = true
+	client = &http.Client{Transport: transport}
 	host = hostUrl
 	token = tokenValue
 	verbose = verboseFlag
+
+	printer.Debug(verboseFlag, "TLS certificate verification disabled")
 }
 
 func Get(path string, query *Query) (responseBody []byte, err error) {
