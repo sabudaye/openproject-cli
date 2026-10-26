@@ -5,6 +5,7 @@ go 1.25.1
 require (
 	github.com/briandowns/spinner v1.23.2
 	github.com/go-git/go-git/v5 v5.18.0
+	github.com/mattn/go-isatty v0.0.20
 	github.com/sosodev/duration v1.3.1
 	github.com/spf13/cobra v1.10.1
 )
@@ -24,7 +25,6 @@ require (
 	github.com/jbenet/go-context v0.0.0-20150711004518-d14ea06fba99 // indirect
 	github.com/kevinburke/ssh_config v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
-	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/pjbgf/sha1cd v0.4.0 // indirect
 	github.com/sergi/go-diff v1.4.0 // indirect
 	github.com/skeema/knownhosts v1.3.1 // indirect

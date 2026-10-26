@@ -162,6 +162,31 @@ op work-package update 42 -
 --type      -t  -- Change the work package type
 ```
 
+### Output formats
+
+Command results go to standard out, diagnostics (progress, warnings, errors,
+`[DEBUG]` traces) go to standard error, so both streams can be captured
+independently.
+
+```shell
+# Human-readable text (default)
+op work-package list
+
+# Stable JSON on standard out — best for scripts and AI agents
+op --format json work-package list
+op --format json work-package inspect 42 2>/dev/null
+```
+
+Colors are only emitted when standard out is a terminal. When output is piped
+or redirected the text is plain, and the `NO_COLOR` / `CLICOLOR` /
+`CLICOLOR_FORCE` environment variables override the detection:
+
+| Variable         | Effect                                                    |
+|------------------|-----------------------------------------------------------|
+| `NO_COLOR`       | Disable colors (any value)                                |
+| `CLICOLOR=0`     | Disable colors                                            |
+| `CLICOLOR_FORCE` | Force colors even without a terminal (unless `NO_COLOR`)  |
+
 ### Authentication
 
 #### Single instance (default)

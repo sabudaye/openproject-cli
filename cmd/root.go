@@ -141,6 +141,10 @@ func resolvedProfile(cmd *cobra.Command) (profile string, explicit bool) {
 
 func Execute(version *configuration.Version) error {
 	configuration.Init(version)
+	// Decide once, before any command runs, whether ANSI colors may be
+	// emitted: no colors when stdout is not a terminal or NO_COLOR is set,
+	// so captured output stays free of escape sequences.
+	printer.InitColors()
 
 	return rootCmd.Execute()
 }
