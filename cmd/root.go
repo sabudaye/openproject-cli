@@ -10,6 +10,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/sabudaye/openproject-cli/cmd/activity"
+	"github.com/sabudaye/openproject-cli/cmd/attachment"
 	"github.com/sabudaye/openproject-cli/cmd/budget"
 	"github.com/sabudaye/openproject-cli/cmd/git"
 	"github.com/sabudaye/openproject-cli/cmd/notification"
@@ -191,6 +192,7 @@ func init() {
 		whoamiCmd,
 		// noun-first (new)
 		activity.RootCmd,
+		attachment.RootCmd,
 		budget.RootCmd,
 		workpackage.RootCmd,
 		project.RootCmd,

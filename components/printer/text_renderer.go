@@ -13,6 +13,22 @@ import (
 
 type TextRenderer struct{}
 
+func (r *TextRenderer) Attachment(a *models.Attachment) {
+	printAttachment(a, idLength(a.Id), len(a.FileName))
+}
+
+func (r *TextRenderer) Attachments(as []*models.Attachment) {
+	var maxIdLength = 0
+	var maxNameLength = 0
+	for _, a := range as {
+		maxIdLength = common.Max(maxIdLength, idLength(a.Id))
+		maxNameLength = common.Max(maxNameLength, len(a.FileName))
+	}
+	for _, a := range as {
+		printAttachment(a, maxIdLength, maxNameLength)
+	}
+}
+
 func (r *TextRenderer) Budget(b *models.Budget) {
 	printBudget(b, idLength(b.Id))
 }

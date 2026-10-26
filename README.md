@@ -342,6 +342,24 @@ op work-package inspect 42
 op work-package inspect PROJ-123
 ```
 
+#### Attachments
+
+```shell
+# List the attachments of a work package
+# --work-package accepts either a numeric ID or a project-based identifier (e.g. PROJ-123)
+op attachment list --work-package 42
+op attachment list -w PROJ-123
+
+# Machine-readable listing
+op --format json attachment list --work-package 42
+
+# Download attachment 13 by its ID to a file of your choice
+op attachment download 13 --output ./tmp/report.pdf
+
+# Without --output the file is saved under the attachment's original name
+op attachment download 13
+```
+
 ## AI agent integration (Claude Code)
 
 The repository ships a [`.claude/op.md`](.claude/op.md) reference file that teaches Claude Code how to use `op`. Once set up, the agent will use `op` proactively whenever you discuss work packages, projects, or anything OpenProject-related.
