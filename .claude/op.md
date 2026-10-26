@@ -152,6 +152,8 @@ op activity list --work-package <wp-id>           # Activities for a work packag
 op attachment list --work-package <wp-id>         # List a work package's attachments (flag is required)
 op attachment download <id> --output <file>       # Download an attachment to a file
 op attachment download <id>                       # Download using the attachment's original file name
+
+op relation list --work-package <wp-id>           # Relations of a work package, both sides (flag is required)
 ```
 
 ## Git integration

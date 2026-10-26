@@ -10,6 +10,47 @@ import (
 
 type JsonRenderer struct{}
 
+type relationWorkPackageJson struct {
+	Id    uint64 `json:"id"`
+	Title string `json:"title,omitempty"`
+}
+
+type relationJson struct {
+	Id          uint64                  `json:"id"`
+	Name        string                  `json:"name"`
+	Type        string                  `json:"type"`
+	ReverseType string                  `json:"reverse_type,omitempty"`
+	Lag         int                     `json:"lag,omitempty"`
+	Description string                  `json:"description,omitempty"`
+	From        relationWorkPackageJson `json:"from"`
+	To          relationWorkPackageJson `json:"to"`
+}
+
+func toRelationJson(rel *models.Relation) relationJson {
+	return relationJson{
+		Id:          rel.Id,
+		Name:        rel.Name,
+		Type:        rel.Type,
+		ReverseType: rel.ReverseType,
+		Lag:         rel.Lag,
+		Description: rel.Description,
+		From:        relationWorkPackageJson{Id: rel.FromId, Title: rel.FromTitle},
+		To:          relationWorkPackageJson{Id: rel.ToId, Title: rel.ToTitle},
+	}
+}
+
+func (r *JsonRenderer) Relation(rel *models.Relation) {
+	printJson(toRelationJson(rel))
+}
+
+func (r *JsonRenderer) Relations(rels []*models.Relation) {
+	out := make([]relationJson, len(rels))
+	for i, rel := range rels {
+		out[i] = toRelationJson(rel)
+	}
+	printJson(out)
+}
+
 func (r *JsonRenderer) Attachment(a *models.Attachment) {
 	printJson(struct {
 		Id              uint64 `json:"id"`

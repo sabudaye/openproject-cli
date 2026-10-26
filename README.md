@@ -360,6 +360,18 @@ op attachment download 13 --output ./tmp/report.pdf
 op attachment download 13
 ```
 
+#### Relations
+
+```shell
+# List the relations of a work package (on both sides: from and to)
+# --work-package accepts either a numeric ID or a project-based identifier (e.g. PROJ-123)
+op relation list --work-package 42
+op relation list -w PROJ-123
+
+# Machine-readable listing
+op --format json relation list --work-package 42
+```
+
 ## AI agent integration (Claude Code)
 
 The repository ships a [`.claude/op.md`](.claude/op.md) reference file that teaches Claude Code how to use `op`. Once set up, the agent will use `op` proactively whenever you discuss work packages, projects, or anything OpenProject-related.

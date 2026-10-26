@@ -42,6 +42,10 @@ func ProjectBudgets(projectId string) string {
 	return Project(projectId) + "/budgets"
 }
 
+func Relations() string {
+	return Root() + "/relations"
+}
+
 func Root() string {
 	return "/api/v3"
 }

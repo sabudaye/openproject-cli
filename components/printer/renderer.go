@@ -9,6 +9,8 @@ import (
 type Renderer interface {
 	Attachment(*models.Attachment)
 	Attachments([]*models.Attachment)
+	Relation(*models.Relation)
+	Relations([]*models.Relation)
 	Budget(*models.Budget)
 	Budgets([]*models.Budget)
 	WorkPackage(*models.WorkPackage)
