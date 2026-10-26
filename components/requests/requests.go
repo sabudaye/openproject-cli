@@ -145,6 +145,66 @@ func Probe(path string) (statusCode int, header http.Header, body []byte, err er
 	return resp.StatusCode, resp.Header, responseBody, nil
 }
 
+// DownloadFile streams the content at href into out and returns the number
+// of bytes written. href may be a path relative to the configured instance
+// (local attachment storage) or an absolute URL (remote storage such as S3).
+// The API token is only sent to the configured instance: remote download
+// locations such as signed URLs carry their own credentials.
+func DownloadFile(href string, out io.Writer) (int64, error) {
+	if client == nil || hostUnitialised() {
+		return 0, errors.Custom("Cannot execute requests without initializing request client first. Run `op login`")
+	}
+
+	target, err := resolveHref(href)
+	if err != nil {
+		return 0, err
+	}
+
+	request, err := http.NewRequest(http.MethodGet, target.String(), nil)
+	if err != nil {
+		return 0, err
+	}
+
+	if sameHost(target, host) && len(token) > 0 {
+		request.SetBasicAuth("apikey", token)
+	}
+
+	resp, err := client.Do(request)
+	if err != nil {
+		return 0, err
+	}
+	defer func() { _ = resp.Body.Close() }()
+
+	if !isSuccess(resp.StatusCode) {
+		body, readErr := io.ReadAll(io.LimitReader(resp.Body, 1024))
+		if readErr != nil {
+			return 0, readErr
+		}
+		return 0, errors.NewResponseError(resp.StatusCode, body)
+	}
+
+	return io.Copy(out, resp.Body)
+}
+
+// resolveHref turns a downloadLocation href into an absolute URL. Relative
+// hrefs are resolved against the configured instance.
+func resolveHref(href string) (*url.URL, error) {
+	parsed, err := url.Parse(href)
+	if err != nil {
+		return nil, err
+	}
+	if parsed.IsAbs() {
+		return parsed, nil
+	}
+
+	base := &url.URL{Scheme: host.Scheme, Host: host.Host}
+	return base.ResolveReference(parsed), nil
+}
+
+func sameHost(a, b *url.URL) bool {
+	return strings.EqualFold(a.Host, b.Host)
+}
+
 func isSuccess(code int) bool {
 	return code >= 200 && code <= 299
 }

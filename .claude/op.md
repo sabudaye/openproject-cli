@@ -148,6 +148,10 @@ op status list                                    # List work package statuses
 op type list                                      # List work package types
 
 op activity list --work-package <wp-id>           # Activities for a work package (flag is required)
+
+op attachment list --work-package <wp-id>         # List a work package's attachments (flag is required)
+op attachment download <id> --output <file>       # Download an attachment to a file
+op attachment download <id>                       # Download using the attachment's original file name
 ```
 
 ## Git integration

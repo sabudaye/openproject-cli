@@ -10,6 +10,37 @@ import (
 
 type JsonRenderer struct{}
 
+func (r *JsonRenderer) Attachment(a *models.Attachment) {
+	printJson(struct {
+		Id              uint64 `json:"id"`
+		FileName        string `json:"file_name"`
+		FileSize        int64  `json:"file_size"`
+		Status          string `json:"status"`
+		ContentType     string `json:"content_type"`
+		DigestAlgorithm string `json:"digest_algorithm,omitempty"`
+		DigestHash      string `json:"digest_hash,omitempty"`
+		CreatedAt       string `json:"created_at"`
+	}{a.Id, a.FileName, a.FileSize, a.Status, a.ContentType, a.DigestAlgo, a.DigestHash, a.CreatedAt})
+}
+
+func (r *JsonRenderer) Attachments(as []*models.Attachment) {
+	type item struct {
+		Id          uint64 `json:"id"`
+		FileName    string `json:"file_name"`
+		FileSize    int64  `json:"file_size"`
+		Status      string `json:"status"`
+		ContentType string `json:"content_type"`
+		DigestAlgo  string `json:"digest_algorithm,omitempty"`
+		DigestHash  string `json:"digest_hash,omitempty"`
+		CreatedAt   string `json:"created_at"`
+	}
+	out := make([]item, len(as))
+	for i, a := range as {
+		out[i] = item{a.Id, a.FileName, a.FileSize, a.Status, a.ContentType, a.DigestAlgo, a.DigestHash, a.CreatedAt}
+	}
+	printJson(out)
+}
+
 func (r *JsonRenderer) Budget(b *models.Budget) {
 	printJson(struct {
 		Id      uint64 `json:"id"`

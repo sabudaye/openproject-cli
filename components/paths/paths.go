@@ -26,6 +26,10 @@ func ProjectWorkPackages(projectId string) string {
 	return Project(projectId) + "/work_packages"
 }
 
+func Attachment(id string) string {
+	return Root() + "/attachments/" + id
+}
+
 func Budget(id uint64) string {
 	return Budgets() + fmt.Sprintf("/%d", id)
 }
@@ -76,6 +80,10 @@ func Users() string {
 
 func WorkPackage(id string) string {
 	return WorkPackages() + "/" + id
+}
+
+func WorkPackageAttachments(id string) string {
+	return WorkPackage(id) + "/attachments"
 }
 
 func WorkPackages() string {
