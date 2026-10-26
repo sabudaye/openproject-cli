@@ -15,6 +15,7 @@ import (
 	"github.com/sabudaye/openproject-cli/cmd/git"
 	"github.com/sabudaye/openproject-cli/cmd/notification"
 	"github.com/sabudaye/openproject-cli/cmd/project"
+	"github.com/sabudaye/openproject-cli/cmd/relation"
 	"github.com/sabudaye/openproject-cli/cmd/status"
 	"github.com/sabudaye/openproject-cli/cmd/timeentry"
 	"github.com/sabudaye/openproject-cli/cmd/user"
@@ -196,6 +197,7 @@ func init() {
 		budget.RootCmd,
 		workpackage.RootCmd,
 		project.RootCmd,
+		relation.RootCmd,
 		user.RootCmd,
 		timeentry.RootCmd,
 		wptype.RootCmd,

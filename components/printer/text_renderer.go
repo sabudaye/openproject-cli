@@ -29,6 +29,20 @@ func (r *TextRenderer) Attachments(as []*models.Attachment) {
 	}
 }
 
+func (r *TextRenderer) Relation(rel *models.Relation) {
+	printRelation(rel, idLength(rel.Id))
+}
+
+func (r *TextRenderer) Relations(rels []*models.Relation) {
+	var maxIdLength = 0
+	for _, rel := range rels {
+		maxIdLength = common.Max(maxIdLength, idLength(rel.Id))
+	}
+	for _, rel := range rels {
+		printRelation(rel, maxIdLength)
+	}
+}
+
 func (r *TextRenderer) Budget(b *models.Budget) {
 	printBudget(b, idLength(b.Id))
 }
